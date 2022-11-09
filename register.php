@@ -56,6 +56,8 @@
 		)		
 	);
 
+	header('Content-Type: application/json; charset=utf-8');
+
 	$name = isset($_POST['name']) ? (string)cleanPost($_POST['name']) : '';
 	$soname = isset($_POST['soname']) ? (string)cleanPost($_POST['soname']) : '';
 	$email = isset($_POST['email']) ? (string)cleanPost($_POST['email']) : '';
